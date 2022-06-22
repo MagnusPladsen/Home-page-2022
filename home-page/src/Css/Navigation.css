@@ -1,3 +1,26 @@
+/* UNIVERSAL NAVIGATION 
+----------------------*/
+.active {
+    opacity: 1!important;
+}
+
+li {
+    margin-bottom: 3em;
+}
+
+#closed {
+    display: none;
+}
+
+#open {
+    display: block;
+}
+
+
+
+
+/* MOBILE NAVIGATION 
+----------------------*/
 .mobile-navigation {
     position: absolute;
     background-color: var(--header-color);
@@ -29,22 +52,11 @@
     opacity: 0.6;
 }
 
-.active {
-    opacity: 1!important;
-}
 
-li {
-    margin-bottom: 3em;
-}
 
-#closed {
-    display: none;
-}
 
-#open {
-    display: block;
-}
-
+/* DESKTOP NAVIGATION 
+----------------------*/
 .desktop-navigation {
     display: none;
 }

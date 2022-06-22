@@ -6,7 +6,9 @@ import MenuIcon from '../Images/menu-icon.svg';
 
 
 const cv = "https://docs.google.com/document/d/18BJjTVzUNpr8eiEqRhRikfWG54yaWjYtzItmOk2U7tY/edit?usp=sharing"
+
 const github = <a href="https://github.com/MagnusPladsen" target="_blank"><i class="fa-brands fa-github fa-xl github"></i></a>
+
 const linkedin = <a href="https://www.linkedin.com/in/magnus-pladsen-1a2738226/" target="_blank"><i class="fa-brands fa-linkedin fa-xl linkedin"></i></a>
 
 export default function Navigation() {

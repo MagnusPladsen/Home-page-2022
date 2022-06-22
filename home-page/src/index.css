@@ -1,4 +1,5 @@
-
+/* BODY STYLE 
+----------------------*/
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -16,6 +17,10 @@ body::-webkit-scrollbar {
 .html {
   margin-left: calc(100vw - 100%);
 }
+
+
+
+
 /*   VARIABLES
 -------------------------*/
 :root {
@@ -23,6 +28,10 @@ body::-webkit-scrollbar {
   --header-color: rgb(80, 80, 80);
 }
 
+
+
+/* UNIVERSAL STYLE 
+----------------------*/
 h1, h2, h2, text {
   font-family: 'Fraunces', serif;
 }
