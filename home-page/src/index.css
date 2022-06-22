@@ -1,0 +1,32 @@
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.html {
+  margin-left: calc(100vw - 100%);
+}
+/*   VARIABLES
+-------------------------*/
+:root {
+  --nav-color: rgb(118, 118, 118);
+  --header-color: rgb(80, 80, 80);
+}
+
+h1, h2, h2, text {
+  font-family: 'Fraunces', serif;
+}
+
+p, a {
+  font-family: 'Commissioner', serif;
+}

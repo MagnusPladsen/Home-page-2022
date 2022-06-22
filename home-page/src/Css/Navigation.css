@@ -1,0 +1,131 @@
+.mobile-navigation {
+    position: absolute;
+    background-color: var(--header-color);
+    border-bottom: 1px solid #e6e6e6;
+    width: 100vw;
+    height: 70px;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+}
+
+.navigation__list {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 2.385em;
+    z-index: 1;
+    height: 40vh;
+    width: 100vw;
+    padding-top: 2em;
+    background-color: var(--header-color);
+}
+
+.navigation__item * {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.active {
+    opacity: 1!important;
+}
+
+li {
+    margin-bottom: 3em;
+}
+
+#closed {
+    display: none;
+}
+
+#open {
+    display: block;
+}
+
+.desktop-navigation {
+    display: none;
+}
+
+.navigation__header {
+    position: relative;
+    color: white;
+    top: 1em;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.navigation__menu-icon {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: white;
+    width: 50px;
+}
+
+.desktop-navigation {
+    width: 100vw;
+    height: 70px;
+    background-color: var(--header-color);
+    overflow-x: hidden;
+}
+
+.desktop-navigation__list {
+    position: absolute;
+    top: 0.25em;
+    right: 0em;
+}
+
+.desktop-navigation__item {
+    display: inline;
+    margin-right: 3em;
+}
+
+.desktop-navigation__item * {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+    opacity: 0.6;
+}
+
+.desktop-navigation__header {
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#CV {
+    margin-right: 0!important;
+}
+
+.github {
+    position: relative;
+    top: 1em;
+    left: 14em;
+    color: white;
+}
+
+.linkedin {
+    position: relative;
+    top: 1em;
+    left: 14.5em;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    .mobile-navigation {
+        display: none;
+    }
+    .desktop-navigation {
+        display: block;
+    }
+}
