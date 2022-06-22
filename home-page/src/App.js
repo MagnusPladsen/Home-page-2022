@@ -11,7 +11,7 @@ import imageTrainee2 from './Images/trainee2.svg';
 import imageTrainee3 from './Images/trainee3.svg';
 
 const codecademy = <a className="link" target="_blank" href="https://www.codecademy.com/profiles/MagnusPladsen">Codecademy</a>
-const abaris = <a className="link" target="_blank" href="https://www.abaris.no/">Abaris Consulting AS</a>
+const abaris = <a className="link" target="_blank" href="https://www.abaris.no/">Abaris Consulting AS.</a>
 
 
 function App() {
