@@ -21,7 +21,7 @@ function Home() {
             <p>I am 25 years old and currently live in Lillehammer, Norway.</p>
           </li>
           <li>
-            <p>I have recently worked a few years as a sales & department manager at {power}.</p>
+            <p>I have recently worked a few years as a sales & department manager at {power}</p>
           </li>
           <li>
             <p>I am a full-time remote Frontend student at {noroff}</p>
