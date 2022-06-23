@@ -16,9 +16,9 @@ export const codecademy = <a className="link" target="_blank" href="https://www.
 
 export const abaris = <a className="link" target="_blank" href="https://www.abaris.no/">Abaris Consulting AS.</a>
 
-export const noroff = <a className="link" target="_blank" href="https://www.noroff.no/">Noroff</a>
+export const noroff = <a className="link" target="_blank" href="https://www.noroff.no/">Noroff.</a>
 
-export const power = <a className="link" target="_blank" href="https://www.power.no/">Power</a>
+export const power = <a className="link" target="_blank" href="https://www.power.no/">Power.</a>
 
 export default function About() {
     
@@ -37,7 +37,7 @@ export default function About() {
                     </div>
                     <div className="container">
                         <img src={imageSales} alt="illustration of sales" className="illustrations" />
-                        <p>I have recently worked a few years as a sales & department manager at {power}.</p>
+                        <p>I have recently worked a few years as a Sales & Department manager at {power}</p>
                     </div>
                     <div className="container">
                         <img src={imageDesign} alt="illustration of design" className="illustrations" />
@@ -50,7 +50,7 @@ export default function About() {
                 <div className="grid-container">
                     <div className="container">
                         <img src={imageSchool} alt="illustration of school" className="illustrations" />
-                        <p>I am finally chasing my dream! Now i am studying Frontend development at {noroff}.</p>
+                        <p>I am finally chasing my dream! Now i am studying full-time Frontend development at {noroff}</p>
                     </div>
                     <div className="container">
                         <img src={imageSchool2} alt="illustration of school" className="illustrations" />
@@ -67,7 +67,7 @@ export default function About() {
                 <div className="grid-container">
                     <div className="container">
                         <img src={imageTrainee} alt="illustration of trainee" className="illustrations" />
-                        <p>I was extremely lucky when i got the opportunity to work as a junior developer part time at {abaris}</p>
+                        <p>I was extremely lucky when i got the opportunity to work as a Junior developer / Trainee part time at {abaris}</p>
                     </div>
                     <div className="container">
                         <img src={imageTrainee3} alt="illustration of trainee" className="illustrations" />

@@ -17,8 +17,8 @@ import Demo from './Components/Demo';
 function App() {
 
   const [theme, setTheme] = useState('dark');
-  const darkIcon = <a href="#" onClick={toggleTheme}><i class="fa-solid fa-sun fa-xl nav-icon" id="theme-icon"></i></a>;
-  const lightIcon = <a href="" onClick={toggleTheme}><i class="fa-solid fa-moon fa-xl nav-icon" id="theme-icon"></i></a>;
+  const darkIcon = <a href="#" onClick={toggleTheme}><i className="fa-solid fa-sun fa-xl nav-icon" id="theme-icon"></i></a>;
+  const lightIcon = <a href="" onClick={toggleTheme}><i className="fa-solid fa-moon fa-xl nav-icon" id="theme-icon"></i></a>;
 
   function toggleTheme(e) {
       e.preventDefault();

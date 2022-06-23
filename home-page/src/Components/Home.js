@@ -24,16 +24,16 @@ function Home() {
             <p>I have recently worked a few years as a sales & department manager at {power}.</p>
           </li>
           <li>
-            <p>I am a Frontend student at {noroff}</p>
+            <p>I am a full-time remote Frontend student at {noroff}</p>
           </li>
           <li>
-            <p>I am a Junior developer at {abaris}</p>
+            <p>I am a Junior developer & Trainee at {abaris}</p>
           </li>
         </ul>
         <img src={imagePB} alt="Picture of me" className="pb" />
       </section>
       <footer>
-        <Link id="link-about" to="/about"><a className="cta cta-more" href="#">More info</a></Link>
+        <Link id="link-about" to="/about"><p className="cta cta-more" href="#">More info</p></Link>
       </footer>
     </div>
   );
