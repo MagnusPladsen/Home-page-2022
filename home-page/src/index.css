@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 -------------------------*/
 :root {
   --nav-color: rgb(118, 118, 118);
-  --header-color: rgb(70, 70, 70);
+  --header-color: rgb(50, 50, 50);
 }
 
 
