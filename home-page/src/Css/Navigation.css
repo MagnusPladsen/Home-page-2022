@@ -23,7 +23,7 @@ li {
 ----------------------*/
 .mobile-navigation {
     position: absolute;
-    background-color: var(--header-color);
+    background-color: var(--main-color);
     border-bottom: 1px solid #e6e6e6;
     width: 100vw;
     height: 70px;
@@ -41,7 +41,7 @@ li {
     height: 55vh;
     width: 100vw;
     padding-top: 2em;
-    background-color: var(--header-color);
+    background-color: var(--main-color);
     text-transform: uppercase;
 }
 
@@ -102,7 +102,7 @@ li {
 .desktop-navigation {
     width: 100vw;
     height: 80px;
-    background-color: var(--header-color);
+    background-color: var(--main-color);
     overflow-x: hidden;
 }
 
