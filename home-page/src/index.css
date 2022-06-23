@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 -------------------------*/
 :root {
   --nav-color: rgb(118, 118, 118);
-  --header-color: rgb(80, 80, 80);
+  --header-color: rgb(70, 70, 70);
 }
 
 
@@ -33,9 +33,9 @@ body::-webkit-scrollbar {
 /* UNIVERSAL STYLE 
 ----------------------*/
 h1, h2, h2, text {
-  font-family: 'Fraunces', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 p, a {
-  font-family: 'Commissioner', serif;
+  font-family: 'source sans pro', sans-serif;
 }

@@ -27,7 +27,7 @@ li {
     border-bottom: 1px solid #e6e6e6;
     width: 100vw;
     height: 70px;
-    font-family: 'Fraunces', serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
 }
 
@@ -36,20 +36,57 @@ li {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    top: 2.385em;
+    top: 1.5em;
     z-index: 1;
-    height: 40vh;
+    height: 55vh;
     width: 100vw;
     padding-top: 2em;
     background-color: var(--header-color);
+    text-transform: uppercase;
 }
 
 .navigation__item * {
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 1.875em;
     font-weight: bold;
     opacity: 0.6;
+}
+
+.navigation__header {
+    position: relative;
+    color: white;
+    top: 0.4em;
+    font-size: 1.875em;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.navigation__menu-icon {
+    position: absolute;
+    top: 0.7em;
+    right: 1em;
+    color: white;
+    width: 50px;
+}
+
+.nav-icon {
+    position: relative;
+    /* top: 1em; */
+    margin-bottom: 2.5em;
+    color: white;
+}
+
+.linkedin {
+    margin-right: 25vw;
+}
+
+.facebook {
+    margin-right: 25vw;
+}
+
+.github {
+    left: 0;
 }
 
 
@@ -61,33 +98,17 @@ li {
     display: none;
 }
 
-.navigation__header {
-    position: relative;
-    color: white;
-    top: 1em;
-    font-size: 25px;
-    font-weight: bold;
-    margin-right: 1em;
-}
-
-.navigation__menu-icon {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    color: white;
-    width: 50px;
-}
 
 .desktop-navigation {
     width: 100vw;
-    height: 70px;
+    height: 80px;
     background-color: var(--header-color);
     overflow-x: hidden;
 }
 
 .desktop-navigation__list {
     position: absolute;
-    top: 0.25em;
+    top: -0.1em;
     right: 0em;
 }
 
@@ -97,13 +118,14 @@ li {
 }
 
 .desktop-navigation__item * {
-    font-size: 25px;
+    font-size: 1.875em;
     font-weight: bold;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-family: 'Fraunces', serif;
+    font-family: 'Oswald', sans-serif;
     opacity: 0.6;
+    text-transform: uppercase;
 }
 
 .desktop-navigation__header {
@@ -111,26 +133,12 @@ li {
     top: 0.5em;
     left: 1em;
     color: white;
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: bold;
 }
 
 #CV {
     margin-right: 0!important;
-}
-
-.github {
-    position: relative;
-    top: 1em;
-    left: 14em;
-    color: white;
-}
-
-.linkedin {
-    position: relative;
-    top: 1em;
-    left: 14.5em;
-    color: white;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -139,5 +147,23 @@ li {
     }
     .desktop-navigation {
         display: block;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    .nav-icon {
+        position: relative;
+        top: 1.25em;
+        color: white;
+        margin: 0!important;
+    }
+    .linkedin {
+        left: 12em;
+    }
+    .facebook {
+        left: 13.5em;
+    }
+    .github {
+        left: 15em;
     }
 }

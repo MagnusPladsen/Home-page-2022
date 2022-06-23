@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <section className="app-section">
-        <h2>THIS IS ME</h2>
+        <h2>MYSELF</h2>
         <div className="grid-container">
         <div className="container">
           <img src={imageMe} alt="illustration of me" className="illustrations" />
