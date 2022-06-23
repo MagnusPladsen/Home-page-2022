@@ -77,6 +77,10 @@ li {
     color: white;
 }
 
+.nav-icon:hover {
+    opacity: 0.3;
+}
+
 .linkedin {
     margin-right: 25vw;
 }
