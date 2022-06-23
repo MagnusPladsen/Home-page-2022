@@ -115,4 +115,7 @@
         width: 25vw;
         height: 25vh;
     }
+    .about-footer {
+        padding-top: 0em;
+    }
   }

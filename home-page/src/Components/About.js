@@ -54,11 +54,11 @@ export default function About() {
                     </div>
                     <div className="container">
                         <img src={imageSchool2} alt="illustration of school" className="illustrations" />
-                        <p>The programme is remote and all the lessons are in English.</p>
+                        <p>The program is remote and all the lessons are in English.</p>
                     </div>
                     <div className="container">
                         <img src={imageSchool3} alt="illustration of school" className="illustrations" />
-                        <p>I started the programme in March of 2022 and i will be done in March 2024.</p>
+                        <p>I started the program in March of 2022 and i will be done in March 2024.</p>
                     </div>
                 </div>
             </section>
@@ -79,7 +79,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <footer>
+            <footer className="about-footer">
                     <a href="#top" className="cta">TO THE TOP</a>
             </footer>
         </div>

@@ -1,0 +1,72 @@
+/* MAIN CONTACT STYLE 
+----------------------*/
+.contact {
+    position: absolute;
+    top: 4em;
+    width: 100vw;
+}
+
+.contact-header {
+    position: relative;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.contact-h2 {
+    position: relative;
+    font-size: 2em;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.contact-section {
+    position: relative;
+    display: grid;
+    left: 50%;
+    transform: translate(-50%);
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+}
+
+.contact-grid-item * {
+    text-align: left;
+}
+
+.contact-grid-left {
+    font-weight: bold;
+}
+
+.contact-grid-item a {
+    color: var(--main-color);
+}
+
+.contact-grid-item a:hover {
+    opacity: 0.5;
+}
+
+.contact-image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 18em;
+    max-width: 60vw;
+}
+
+
+
+
+/* DESKTOP STYLE 
+----------------------*/
+@media only screen and (min-width: 1000px) {
+    .contact-section {
+        grid-template-columns: 1fr 1fr;
+        width: 40vw;
+        left: 10em;
+        transform: translate(0%);
+        top: 3em;
+    }
+    .contact-image {
+        top: -1em;
+        margin-left: 35em;
+    }
+}

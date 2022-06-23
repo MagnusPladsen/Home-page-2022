@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Navigation from './Components/Navigation';
 import About from './Components/About';
+import Contact from './Components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <Navigation />
     <Switch>
       <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
       <Route path="/" component={App} />
     </Switch>
   </Router>
