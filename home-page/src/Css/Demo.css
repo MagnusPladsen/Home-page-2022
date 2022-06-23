@@ -1,0 +1,13 @@
+/* MAIN DEMO STYLE 
+----------------------*/
+.demo {
+    position: absolute;
+    top: 4em;
+    width: 100vw;
+}
+
+.demo-header {
+    position: relative;
+    margin: 0 auto;
+    width: 90vw;
+}

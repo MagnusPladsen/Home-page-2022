@@ -18,7 +18,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-grid-item contact-grid-right">
                     <p>Magnus Pladsen</p>
-                    <p><a href = "mailto: kontakt@magnuspladsen.no">Click here</a></p>
+                    <p><a href="mailto:kontakt@magnuspladsen.no">Click here</a></p>
                     <p>+47 948 12 442</p>
                     <p>Lillehammer, Norway</p>
                 </div>

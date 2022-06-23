@@ -6,8 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -26,9 +26,18 @@ body::-webkit-scrollbar {
 :root {
   --main-color: rgb(50, 50, 50);
   --main-color-faded: rgba(50, 50, 50, 0.1);
+  --secondary-color: rgb(255, 255, 255);
+  --bg-color: rgb(255, 255, 255);
+  
+  --filter-color: invert(17%) sepia(1%) saturate(0%) hue-rotate(40deg) brightness(94%) contrast(200%);
 }
-
-
+[data-theme='light'] {
+  --main-color: rgb(255, 255, 255);
+  --main-color-faded: rgba(50, 50, 50, 0.9);
+  --secondary-color: rgb(50, 50, 50);
+  --bg-color: rgb(50, 50, 50);
+  --filter-color: invert(100%) sepia(0%) saturate(7483%) hue-rotate(276deg) brightness(112%) contrast(98%);
+}
 
 /* UNIVERSAL STYLE 
 ----------------------*/

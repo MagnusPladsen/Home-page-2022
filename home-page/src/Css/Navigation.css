@@ -2,7 +2,7 @@
 ----------------------*/
 .active {
     opacity: 1!important;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 li {
@@ -48,7 +48,7 @@ li {
 
 .navigation__item * {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.875em;
     font-weight: bold;
     opacity: 0.6;
@@ -56,18 +56,18 @@ li {
 
 .navigation__header {
     position: relative;
-    color: white;
+    color: var(--secondary-color);
     top: 0.4em;
     font-size: 1.875em;
     font-weight: bold;
-    margin-right: 1em;
+    /* margin-right: 1em; */
 }
 
 .navigation__menu-icon {
     position: absolute;
     top: 0.7em;
     right: 1em;
-    color: white;
+    filter: var(--filter-color);
     width: 50px;
 }
 
@@ -75,7 +75,7 @@ li {
     position: relative;
     /* top: 1em; */
     margin-bottom: 2.5em;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .nav-icon:hover {
@@ -93,6 +93,19 @@ li {
 .github {
     left: 0;
 }
+
+#theme-icon {
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+    width: 50px;
+    color: var(--secondary-color);
+}
+
+#theme-icon:hover {
+    opacity: 1!important;
+}
+
 
 
 
@@ -126,7 +139,7 @@ li {
     font-size: 1.875em;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     opacity: 0.6;
@@ -137,7 +150,7 @@ li {
     position: absolute;
     top: 0.5em;
     left: 1em;
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.875em;
     font-weight: bold;
 }
@@ -153,13 +166,10 @@ li {
     .desktop-navigation {
         display: block;
     }
-    h2 {
-        font-size: 2.5em;
-    }
     .nav-icon {
         position: relative;
         top: 1.25em;
-        color: white;
+        color: var(--secondary-color);
         margin: 0!important;
     }
     .linkedin {
@@ -170,5 +180,15 @@ li {
     }
     .github {
         left: 15em;
+        margin-right: 25vw;
     }
+    #theme-icon {
+        position: relative;
+        top: 1.25em;
+        left: 16.5em;
+    }
+    #theme-icon:hover {
+        opacity: 0.3!important;
+    }
+    
 }

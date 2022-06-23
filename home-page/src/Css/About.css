@@ -2,8 +2,9 @@
 ----------------------*/
 .about {
     position: absolute;
-    top: 4.3em;
+    top: 5em;
     width: 100vw;
+    background-color: var(--bg-color);
   }
   
   .about-section {
@@ -30,11 +31,12 @@
   p {
     font-size: 1.375em;
     text-align: center;
+    color: var(--main-color);
   }
   
-  h2 {
+  .about h2 {
     color: var(--main-color);
-    font-size: 1.875em;
+    font-size: 2.5em;
   }
   
   .header-secondary {
@@ -52,13 +54,13 @@
     background-color: var(--main-color);
     border-radius: 1.5em;
     padding: 15px 30px;
-    color: white;
+    color: var(--secondary-color);
     margin: 0;
   }
   
   .cta:hover {
     color: var(--main-color);
-    background-color: white;
+    background-color: var(--secondary-color);
     border: 2px solid var(--main-color);
   }
   
@@ -75,7 +77,7 @@
   .link {
     text-decoration: none;
     font-weight: 600;
-    color: black;
+    color: var(--main-color);
   }
   
   .link:hover {
@@ -117,5 +119,8 @@
     }
     .about-footer {
         padding-top: 0em;
+    }
+    .header-secondary {
+        margin-left: 1.8em;
     }
   }

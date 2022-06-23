@@ -1,37 +1,61 @@
 import './App.css';
-import imageHero from './Images/hero.svg';
-import { noroff, codecademy, abaris, power } from './Components/About';
-import { Link } from 'react-router-dom';
-import imagePB from './Images/pb.jpg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { useState } from 'react';
+import Navigation from './Components/Navigation';
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Demo from './Components/Demo';
+
+
 
 function App() {
+
+  const [theme, setTheme] = useState('dark');
+  const darkIcon = <a href="#" onClick={toggleTheme}><i class="fa-solid fa-sun fa-xl nav-icon" id="theme-icon"></i></a>;
+  const lightIcon = <a href="" onClick={toggleTheme}><i class="fa-solid fa-moon fa-xl nav-icon" id="theme-icon"></i></a>;
+
+  function toggleTheme(e) {
+      e.preventDefault();
+      if (theme === 'dark') {
+          setTheme('light');
+      } else {
+          setTheme('dark');
+      }
+  };
+
+  const themeIcon = () => {
+      if (theme === 'dark') {
+          return lightIcon;
+      } else {
+          return darkIcon;
+      }
+  }
+
   return (
-    <div className="App">
-      <header className="app-header">
-        <h1 className="app-h1">I am a Frontend<br /> student and a Junior<br /> developer</h1>
-        <img src={imageHero} alt="illustration of me" className="hero" />
-      </header>
-      <section className="app-section">
-        <h2>Short about me</h2>
-        <ul>
-          <li>
-            <p>I am 25 years old and currently live in Lillehammer, Norway.</p>
-          </li>
-          <li>
-            <p>I have recently worked a few years as a sales & department manager at {power}.</p>
-          </li>
-          <li>
-            <p>I am a Frontend student at {noroff}</p>
-          </li>
-          <li>
-            <p>I am a Junior developer at {abaris}</p>
-          </li>
-        </ul>
-        <img src={imagePB} alt="Picture of me" className="pb" />
-      </section>
-      <footer>
-        <Link id="link-about" to="/about"><a className="cta cta-more" href="#">More info</a></Link>
-      </footer>
+    <div className="App"  data-theme={theme}>
+      <Router>
+        <Navigation themeIcon={themeIcon}/>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/demo">
+            <Demo />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

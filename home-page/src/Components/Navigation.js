@@ -1,8 +1,9 @@
 import react from 'react';
 import { NavLink } from 'react-router-dom';
 import '../Css/Navigation.css';
-import { useState } from 'react';
 import MenuIcon from '../Images/menu-icon.svg';
+import { useState } from 'react';
+
 
 
 const cv = "https://docs.google.com/document/d/18BJjTVzUNpr8eiEqRhRikfWG54yaWjYtzItmOk2U7tY/edit?usp=sharing"
@@ -13,7 +14,12 @@ const linkedin = <a href="https://www.linkedin.com/in/magnus-pladsen-1a2738226/"
 
 const facebook = <a href="https://www.facebook.com/magnus.pladsen" target="_blank"><i class="fa-brands fa-facebook fa-xl facebook nav-icon"></i></a>
 
-export default function Navigation() {
+
+
+export default function Navigation(props) {
+
+    const themeIcon = props.themeIcon;
+    
     const [isOpen, setIsOpen] = useState('closed');
 
     const handleClick = () => {
@@ -23,13 +29,13 @@ export default function Navigation() {
         else {
             setIsOpen('closed');
         }
-    }
+    };
 
   return (
     <div className="Navigation" id="top">
         <nav className="desktop-navigation">
         <text className="desktop-navigation__header">MAGNUS PLADSEN</text>
-        {linkedin} {facebook} {github} 
+        {linkedin} {facebook} {github} {themeIcon()}
             <ul className="desktop-navigation__list">
                 <li className="desktop-navigation__item">
                     <NavLink to="/" exact={true}>Home</NavLink>
@@ -46,6 +52,7 @@ export default function Navigation() {
             </ul>
         </nav>
         <nav className="mobile-navigation">
+            {themeIcon()}
             <text className="navigation__header">MAGNUS PLADSEN</text>
             <img src={MenuIcon} alt="menu-icon" className="navigation__menu-icon" onClick={handleClick} />
             <ul className="navigation__list" id={isOpen}>
