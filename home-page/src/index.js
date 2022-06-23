@@ -10,14 +10,16 @@ import {
   Link
 } from "react-router-dom";
 import Navigation from './Components/Navigation';
+import About from './Components/About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Route>
-      <Navigation />
-    </Route>
-    <Route path="/" component={App} />
+    <Navigation />
+    <Switch>
+      <Route path="/about" component={About} />
+      <Route path="/" component={App} />
+    </Switch>
   </Router>
 );
 

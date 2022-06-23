@@ -6,40 +6,79 @@
   width: 100vw;
 }
 
-.app-section {
-  position: relative;
-  width: 90vw;
-  margin: 0 auto;
-}
-
-.container {
-  position: relative;
-  width: 80vw;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 3em;
+.app-header {
+  background-color: var(--main-color-faded);
+  border-bottom: 3px dotted var(--main-color);
+  padding-bottom: 3em;
   margin-bottom: 5em;
+  margin-top: -1.2em;
 }
 
-.illustrations {
+h1 {
+  padding-top: 0.5em;
   position: relative;
   left: 50%;
   transform: translate(-50%);
-}
-
-p {
-  font-size: 1.375em;
+  width: 90vw;
+  font-size: 2em;
+  color: var(--main-color);
   text-align: center;
 }
 
-h2 {
-  color: var(--main-color);
-  font-size: 1.875em;
+.app-section {
+  position: relative;
+  top: -3em;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.header-secondary {
-  margin-top: 0em;
+li p {
+  text-align: left;
+  margin-bottom: -1em;
 }
+
+.pb {
+  position: relative;
+  top: 2em;
+  max-width: 70vw;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 3em;
+}
+
+
+
+/* HERO STYLE 
+----------------------*/
+.hero {
+  position: relative;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80vw;
+}
+
+
+
+
+/* LINK STYLE 
+----------------------*/
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+  
+.link:hover {
+  opacity: 0.3;
+}
+
+#link-about {
+  text-decoration: none;
+}
+
 
 
 
@@ -62,26 +101,6 @@ h2 {
   border: 2px solid var(--main-color);
 }
 
-.cta-top {
-  position: relative;
-  top: 0.5em;
-}
-
-
-
-
-/* LINK STYLE 
-----------------------*/
-.link {
-  text-decoration: none;
-  font-weight: 600;
-  color: black;
-}
-
-.link:hover {
-  opacity: 0.3;
-}
-
 
 
 
@@ -91,6 +110,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  padding-top: 2em;
 }
 
 
@@ -99,20 +119,41 @@ footer {
 /* DESKTOP STYLE 
 ----------------------*/
 @media only screen and (min-width: 1000px) {
-  .grid-container {
-      position: relative;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      width: 90vw;
-      left: 50%;
-      transform: translate(-50%);
-      gap: 4em;
+  .app-header {
+    background-color: var(--main-color-faded);
+    border-bottom: 5px dotted var(--main-color);
+    height: 70vh;
+    margin-bottom: 0em;
+    margin-top: -2.7em;
   }
-  .container {
-      width: 25vw;
+  h1 {
+    margin-left: 1em;
+    position: relative;
+    font-size: 80px;
+    width: 50vw;
+    left: 5em;
+    top: 0em;
+    z-index: 1;
+    white-space: nowrap;
   }
-  .illustrations {
-      width: 25vw;
-      height: 25vh;
+  .hero {
+    position: absolute;
+    top: 3em;
+    padding-left: 35vw;
+    max-width: 60vw;
+  }
+  .app-section {
+    top: 2em;
+  }
+  .pb {
+    position: absolute;
+    max-width: 20vw;
+    top: 0;
+    right: 0;
+    transform: translate(100%);
+    margin-bottom: 0;
+  }
+  footer {
+    padding-top: 6em;
   }
 }

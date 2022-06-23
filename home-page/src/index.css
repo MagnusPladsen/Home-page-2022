@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
 -------------------------*/
 :root {
   --main-color: rgb(50, 50, 50);
+  --main-color-faded: rgba(50, 50, 50, 0.1);
 }
 
 

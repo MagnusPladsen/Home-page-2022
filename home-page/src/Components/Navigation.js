@@ -26,13 +26,13 @@ export default function Navigation() {
     }
 
   return (
-    <div className="Navigation">
+    <div className="Navigation" id="top">
         <nav className="desktop-navigation">
         <text className="desktop-navigation__header">MAGNUS PLADSEN</text>
         {linkedin} {facebook} {github} 
             <ul className="desktop-navigation__list">
                 <li className="desktop-navigation__item">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/" exact={true}>Home</NavLink>
                 </li>
                 <li className="desktop-navigation__item">
                     <NavLink to="/about">About</NavLink>
@@ -51,13 +51,13 @@ export default function Navigation() {
             <ul className="navigation__list" id={isOpen}>
             {linkedin} {facebook} {github}
                 <li className="navigation__item">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/" exact={true} onClick={handleClick}>Home</NavLink>
                 </li>
                 <li className="navigation__item">
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/about" onClick={handleClick}>About</NavLink>
                 </li>
                 <li className="navigation__item">
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact" onClick={handleClick}>Contact</NavLink>
                 </li>
                 <li className="navigation__item">
                     <a href={cv} target="_blank">CV</a>
