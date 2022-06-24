@@ -115,6 +115,7 @@ button:hover {
     .contact-image {
         top: -3em;
         margin-left: 35em;
+        width: 30vw;
     }
     input, textarea {
         width: 30vw;
