@@ -6,13 +6,6 @@ const endpoint = 'https://formspree.io/f/mdobvdgd'
 const siteKey = '6LeaJJkgAAAAAEuL6o09LanD8zAgX1S8rtlWHvlV'
 
 export default function ContactForm() {
-    window.onload = function() { 
-        var el = document.getElementById('g-recaptcha-response'); 
-        if (el) { 
-          el.setAttribute('required', 'required'); 
-        } 
-    }
-
     const [state, handleSubmit] = useForm("mdobvdgd");
     if (state.succeeded) {
         return <p>Thanks for sending me a Message!</p>;
@@ -54,7 +47,6 @@ export default function ContactForm() {
             field="message"
             errors={state.errors}
             />
-            <div class="g-recaptcha" data-sitekey={siteKey}></div>
 
             <button class="cta cta-submit" type="submit" disabled={state.submitting}>
             Send message
