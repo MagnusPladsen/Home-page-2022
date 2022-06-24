@@ -54,7 +54,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 30em;
+    top: 35em;
     max-width: 80vw;
     padding-bottom: 4em;
 }
@@ -63,6 +63,7 @@
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    margin-top: 2em;
 }
 
 form {
@@ -99,6 +100,15 @@ button:hover {
     cursor: pointer;
 }
 
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -50px 0 0 0 !important;
+    z-index: -999999;
+    opacity: 0;
+    left: 50%;
+
+}
 
 
 /* DESKTOP STYLE 
