@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 
 [data-theme='light'] {
   --main-color: rgb(255, 255, 255);
-  --main-color-faded: rgba(50, 50, 50, 0.9);
+  --main-color-faded: rgb(50, 50, 50);
   --secondary-color: rgb(50, 50, 50);
   --bg-color: rgb(50, 50, 50);
   --filter-color: invert(100%) sepia(0%) saturate(7483%) hue-rotate(276deg) brightness(112%) contrast(98%);
