@@ -3,8 +3,6 @@ import { useForm, ValidationError } from '@formspree/react';
 
 const endpoint = 'https://formspree.io/f/mdobvdgd'
 
-const siteKey = '6LeaJJkgAAAAAEuL6o09LanD8zAgX1S8rtlWHvlV'
-
 export default function ContactForm() {
     const [state, handleSubmit] = useForm("mdobvdgd");
     if (state.succeeded) {
