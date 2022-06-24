@@ -71,6 +71,7 @@ form {
 
 label {
     font-size: 1.2em;
+    color: var(--main-color);
 }
 
 input, textarea {
