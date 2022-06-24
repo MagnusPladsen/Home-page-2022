@@ -4,9 +4,9 @@ import '../Css/Navigation.css';
 import MenuIcon from '../Images/menu-icon.svg';
 import { useState } from 'react';
 
+const cv = 'https://cvapp.no/r/Zp6CtZi4z'
 
-
-const cv = "https://docs.google.com/document/d/18BJjTVzUNpr8eiEqRhRikfWG54yaWjYtzItmOk2U7tY/edit?usp=sharing"
+const oldCV = "https://docs.google.com/document/d/18BJjTVzUNpr8eiEqRhRikfWG54yaWjYtzItmOk2U7tY/edit?usp=sharing"
 
 const github = <a href="https://github.com/MagnusPladsen" target="_blank"><i className="fa-brands fa-github fa-xl github nav-icon"></i></a>
 
