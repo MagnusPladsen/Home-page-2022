@@ -12,6 +12,7 @@
     position: relative;
     margin: 0 auto;
     width: 90vw;
+    padding-bottom: 2em;
 }
 
 .contact-h2 {
@@ -28,6 +29,7 @@
     transform: translate(-50%);
     grid-template-columns: 1fr 1fr;
     width: 80vw;
+    gap: 2em;
 }
 
 .contact-grid-item * {
@@ -35,7 +37,9 @@
 }
 
 .contact-grid-left {
+    position: relative;
     font-weight: bold;
+    top: -3em;
 }
 
 .contact-grid-item a {
@@ -50,10 +54,49 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 18em;
-    max-width: 60vw;
+    top: 30em;
+    max-width: 80vw;
+    padding-bottom: 4em;
 }
 
+.cta-submit {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+form {
+    font-family: 'source sans pro', sans-serif;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input, textarea {
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    width: 75vw;
+    font-size: 1em;
+    height: 2em;
+    font-family: 'source sans pro', sans-serif;
+}
+
+input:focus, textarea:focus {
+    background-color: var(--secondary-color);
+    outline: none;
+    color: var(--main-color);
+}
+
+#message {
+    height: 10em;
+    resize: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
 
 
 
@@ -66,9 +109,18 @@
         left: 10em;
         transform: translate(0%);
         top: 3em;
+        gap: 0!important;
     }
     .contact-image {
-        top: -1em;
+        top: -3em;
         margin-left: 35em;
+    }
+    input, textarea {
+        width: 30vw;
+    }
+    .contact-grid-left {
+        position: relative;
+        font-weight: bold;
+        top: -6em;
     }
 }

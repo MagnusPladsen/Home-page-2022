@@ -10,6 +10,7 @@ import Navigation from './Components/Navigation';
 import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import ContactForm from './Components/ContactForm';
 import Demo from './Components/Demo';
 
 

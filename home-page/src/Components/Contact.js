@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Css/Contact.css';
 import imageContact from '../Images/contact.svg';
+import ContactForm from './ContactForm';
 
 export default function Contact() {
 
@@ -11,18 +12,11 @@ export default function Contact() {
             </header>
             <section className="contact-section">
                 <div className="contact-grid-item contact-grid-left">
-                    <p>NAME</p>
-                    <p>EMAIL</p>
-                    <p>PHONE</p>
-                    <p>LOCATION</p>
+                    <ContactForm/>
                 </div>
                 <div className="contact-grid-item contact-grid-right">
-                    <p>Magnus Pladsen</p>
-                    <p><a href="mailto:kontakt@magnuspladsen.no">Click here</a></p>
-                    <p>+47 948 12 442</p>
-                    <p>Lillehammer, Norway</p>
+                    <img src={imageContact} alt="illustration of email" className="contact-image" />
                 </div>
-                <img src={imageContact} alt="illustration of email" className="contact-image" />
             </section>
         </div>
     );
