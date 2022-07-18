@@ -69,7 +69,7 @@ export default function Navigation(props) {
                     <NavLink to="/contact" onClick={handleClick}>Contact</NavLink>
                 </li>
                 <li className="navigation__item">
-                    <a href={cv} target="_blank">CV</a>
+                    {cv}<img src={externalLink} alt="external link icon" className="external-link" />
                 </li>
                 
             </ul>
