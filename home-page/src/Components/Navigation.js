@@ -3,10 +3,12 @@ import { NavLink } from 'react-router-dom';
 import '../Css/Navigation.css';
 import MenuIcon from '../Images/menu-icon.svg';
 import { useState } from 'react';
+import externalLink from '../Images/external-link.svg';
 
-const cv = 'https://cvapp.no/r/Zp6CtZi4z'
+const cv = <a href='https://cvapp.no/r/Zp6CtZi4z' target="_blank" id="CV">CV</a>
 
 const oldCV = "https://docs.google.com/document/d/18BJjTVzUNpr8eiEqRhRikfWG54yaWjYtzItmOk2U7tY/edit?usp=sharing"
+
 
 const github = <a href="https://github.com/MagnusPladsen" target="_blank"><i className="fa-brands fa-github fa-xl github nav-icon"></i></a>
 
@@ -47,7 +49,7 @@ export default function Navigation(props) {
                     <NavLink to="/contact">Contact</NavLink>
                 </li>
                 <li className="desktop-navigation__item">
-                    <a href={cv} target="_blank" id="CV">CV</a>
+                    {cv}<img src={externalLink} alt="external link icon" className="external-link" />
                 </li>
             </ul>
         </nav>
